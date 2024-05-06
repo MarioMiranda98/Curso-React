@@ -1,0 +1,7 @@
+node_modules
+public
+yarn.lock
+
+dist
+dist-ssr
+*.local

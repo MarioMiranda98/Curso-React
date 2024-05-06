@@ -1,0 +1,44 @@
+ls:
+  .js: kebab-case | pointcase
+  .config.js: kebab-case
+  src:
+    auth:
+      .dir: kebab-case
+      .js: kebab-case
+      .jsx: PascalCase
+      layout:
+        .dir: kebab-case
+        .jsx: PascalCase
+        .js: kebab-case
+      pages:
+        .dir: kebab-case
+        .jsx: PascalCase
+        .js: kebab-case
+      routes:
+        .dir: kebab-case
+        .jsx: PascalCase
+        .js: kebab-case
+    journal:
+      .dir: kebab-case
+      .jsx: PascalCase
+      .js: kebab-case
+      pages:
+        .dir: kebab-case
+        .jsx: PascalCase
+        .js: kebab-case
+      routes:
+        .dir: kebab-case
+        .jsx: PascalCase
+        .js: kebab-case
+    router:
+      .dir: kebab-case
+      .jsx: PascalCase
+      .js: kebab-case
+    theme:
+      .dir: kebab-case
+      .jsx: PascalCase
+      .js: kebab-case
+
+ignore:
+  - node_modules
+  - public
