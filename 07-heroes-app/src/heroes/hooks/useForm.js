@@ -3,22 +3,22 @@ import { useState } from "react";
 export const useForm = (initialForm = {}) => {
   const [formState, setFormState] = useState(initialForm);
 
-  const onInputChange = event => {
-    const value = event.target.value;
-    const inputName = event.target.name;
-
+  const onInputChange = ({ target }) => {
+    const { name, value } = target;
     setFormState({
       ...formState,
-      [inputName]: value,
+      [name]: value,
     });
   };
 
-  const resetForm = () => setFormState(initialForm);
+  const onResetForm = () => {
+    setFormState(initialForm);
+  };
 
   return {
     ...formState,
     formState,
-    resetForm,
     onInputChange,
+    onResetForm,
   };
 };

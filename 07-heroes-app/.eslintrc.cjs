@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true, jest: true, node: true },
+  env: { browser: true, es2020: true },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -8,12 +8,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier",
   ],
-  ignorePatterns: [
-    "dist",
-    ".eslintrc.cjs",
-    "babel.config.cjs",
-    "jest.config.cjs",
-  ],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
@@ -23,6 +18,5 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
-    "react-hooks/rules-of-hooks": "error",
   },
 };

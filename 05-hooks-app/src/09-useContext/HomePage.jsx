@@ -9,8 +9,8 @@ export const HomePage = () => {
     <>
       <h1>Home Page</h1>
       <hr />
-      <p>{context?.user?.name}</p>
+      <p aria-label="name">{context?.user?.name}</p>
       <p>{context?.user?.email}</p>
     </>
-  )
-}
+  );
+};
