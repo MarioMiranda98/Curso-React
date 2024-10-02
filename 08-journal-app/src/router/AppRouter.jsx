@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom"
-import { AuthRoutes } from "../auth/routes/AuthRoutes"
-import { JournalRoutes } from "../journal/routes/JournalRoutes"
+import { Route, Routes } from "react-router-dom";
+import { AuthRoutes } from "../auth/routes/AuthRoutes";
+import { JournalRoutes } from "../journal/routes/JournalRoutes";
 
 export const AppRouter = () => {
   return (
@@ -10,5 +10,5 @@ export const AppRouter = () => {
       {/* Journal App */}
       <Route path="/*" element={<JournalRoutes />} />
     </Routes>
-  )
-}
+  );
+};

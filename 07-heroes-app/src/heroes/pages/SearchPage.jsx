@@ -55,7 +55,7 @@ export const SearchPage = () => {
             <div className="alert alert-primary">Search a Hero</div>
           )}
           {q.length > 0 && heroes.length === 0 && (
-            <div className="alert alert-danger">
+            <div className="alert alert-danger" aria-label="alert-danger">
               No hero found with value: {q}
             </div>
           )}
